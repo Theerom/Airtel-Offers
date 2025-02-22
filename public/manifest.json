@@ -1,0 +1,17 @@
+{
+  "name": "Airtel Free Data Offer",
+  "short_name": "Airtel Offer",
+  "description": "Get your free 10GB data from Airtel! Limited time offer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF0000",
+  "icons": [
+    {
+      "src": "/ico.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 

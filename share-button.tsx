@@ -3,15 +3,16 @@ import { Button } from "@/components/ui/button"
 
 export function ShareButton() {
   const shareContent = async () => {
+    const shareUrl = "https://airtel-offers.vercel.app"
     try {
       if (navigator.share) {
         await navigator.share({
           title: "Free 10GB Airtel Data",
           text: "Get your free 10GB data from Airtel! Limited time offer.",
-          url: window.location.href,
+          url: shareUrl,
         })
       } else {
-        await navigator.clipboard.writeText(window.location.href)
+        await navigator.clipboard.writeText(shareUrl)
         alert("Link copied to clipboard!")
       }
     } catch (err) {
